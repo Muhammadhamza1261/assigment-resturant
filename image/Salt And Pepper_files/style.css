@@ -1,0 +1,551 @@
+* {
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+}
+body {
+    background-color: black;
+    color:white;
+}
+
+.row {
+    display: flex;
+    flex-flow:row;
+}
+.column {
+    display:flex;
+    flex-flow:column
+}
+.space-between 
+{
+    justify-content:space-between;
+}
+.border {
+    border:1px solid red;
+}
+.border-item {
+    border:4px solid yellowgreen;
+}
+.center {
+    align-items: center;
+    justify-content: center;
+}
+.center-x {
+    justify-content: center;
+}
+
+/*Round Links*/
+
+.rounded-link{
+    text-decoration: none;
+    padding:8px 12px;
+    border:1px solid white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    color:white;
+
+}
+
+.rounded-link::after
+{
+     font-family: "FontAwesome";
+     content: "\f061";
+     color:red;
+     background-color: white;
+     border-radius: 50%;
+     margin-left:5px;
+     width: 20px;
+     height:20px ;
+     text-align: center;
+     font-size: 15px;  
+     /* transform: rotate(300deg); */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+}
+
+.container {
+    width:1000px;
+    margin:0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-container
+{
+/* border:2px solid red; */
+width: 100%;
+overflow: hidden;
+background-color:black;
+color:white;
+justify-content: space-between;
+}
+.side-menu  {
+display: none;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.nav-logo-img {
+    width:180px;
+    height: 80px;
+}
+.a_links a {
+    /* border:1px solid red; */
+    text-decoration: none;
+    color:white;
+    padding:14px 16px;   
+}
+.nav-button {
+    border:1px solid white;
+    padding:14px 16px;
+    /* width: 150px; */
+    border-radius: 24px;  
+    cursor: pointer;
+}
+.nav-button-links {
+    gap:5px;
+    /* border:1px solid red; */
+    justify-content: space-between;
+    align-items: center;
+}
+.order-online {
+     
+    background-color: red;
+    padding:10px 16px;
+    border-radius: 25px;
+    /* border:1px solid white; */
+}
+
+.order-online::after {
+     font-family: "FontAwesome";
+     content: "\f061";
+     color:red;
+     background-color: white;
+     border-radius: 50%;
+     margin-left:5px;
+     width: 25px;
+     height:25px ;
+     text-align: center;
+     font-size: 20px;  
+     /* transform: rotate(300deg); */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.cover-image {
+    width:100%;
+   
+}
+.cover-image-section {
+     transition: all  2s ease-in-out;
+}
+/* welcome section */
+.welcome-section-container
+{
+    /* border:1px solid blue; */
+    width:100%;
+    height:550px;
+    margin-top:10px;
+    padding:50px 10px 10px 30px;
+    gap:30px;
+    align-items:center;
+    justify-content: space-evenly;
+}
+.wellcome-row {
+    /* border: 2px solid lime; */
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+}
+.welcome-row::-webkit-scrollbar {
+    display: none;
+}
+
+.wellcome-section
+{
+    text-align: center;
+    /* border:1px solid yellowgreen; */
+}
+.color-gray {
+    margin-top:15px;
+    color:gray;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.text-big {
+    /* border:1px solid white; */
+    font-size: 2.1875rem;
+    /* font-size: 35px; */
+    font-weight: bold;
+    color:white;
+    text-align: center;
+}
+
+text {
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.wellcome-section-cards
+{
+    gap:10px;
+}
+.cards {
+    gap:15px;
+}
+
+.card-image-div {
+    /* border:1px solid red; */
+    background-color: white;
+    width:238px;
+    height: 140px; 
+    border-radius: 5px;
+    background-size: 180px 110px;
+    background-repeat: no-repeat;
+    background-position:  center;
+}
+.card-image-01 {
+     background-image: url(../Images/Small_box_logos/SNP-Restaurant.webp);
+
+}
+.card-image-02 {
+     background-image: url(../Images/Small_box_logos/SNP-Express.webp);
+
+}
+.card-image-03 {
+     background-image: url(../Images/Small_box_logos/SNP-Village.webp);
+
+}
+.card-image-04 {
+     background-image: url(../Images/Small_box_logos/SNP-Restaurant_Signature.webp);
+
+}
+ .order-rounded-link {
+    text-decoration: none;
+    padding:10px 14px;
+    border-radius: 25px;
+    border: 1px solid white;
+    text-align: center;
+    color:white;
+ }
+.card-button {
+    align-items: center;
+}
+/* Restaurant Address */
+
+.Restaurant-address-container {
+    background-image: url(../Images/Building-Images/Background-image.webp);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding:35px 5px;
+    color:white;
+    gap:25px;
+    background-color: #0F0F0F;
+}
+
+.image-and-description 
+{
+    padding:10px 15px;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+.address-section {
+    justify-content: space-evenly;
+    font-size:22px;
+    text-align: center;
+}
+.address-section .get-direction {
+    border:none;
+}
+.city-name 
+{
+    text-transform:uppercase;
+    color:red;
+    /* border:1px solid red; */
+}
+.building-images {
+    width:480px;
+    border:1px solid white;
+}
+.Restaurant-address-header {
+    padding:50px ;
+}
+.Restaurant-name {
+    font-size:24px;
+}
+.address , .phone-number {
+    color:gray;
+}
+
+/*Block Address*/
+
+.block
+{
+    /* border:1px  solid greenyellow; */
+    width:350px;
+    /* height: 450px; */
+    height: 460px;
+    padding:5px 5px;
+    margin-top:20px;
+    gap:5px
+}
+.block-image {
+    /* border:1px solid  greenyellow; */
+    height: 250px;
+    padding: 2px;
+}
+.block-image img {
+width: 100%;
+height:100%;
+object-fit: cover;
+}
+.block-address {
+    /* border:1px solid red; */
+    text-align: center;
+    margin-top:0px;
+    height: 220px;
+    justify-content: space-evenly;
+
+}
+.block-address .rounded-link::after
+{
+   transform: rotate(320deg);
+   color:blue;
+}
+.Row-Block-Address
+{
+    gap:10px
+}
+.block .city-name 
+{
+    text-transform:small;
+    font-size: 10px;
+    color:red;
+    /* border:1px solid red; */
+}
+.block .restaurant-name {
+    /* border:1px solid red; */
+    color:white;
+}
+.block-address-heading {
+    color:white;
+    font-size:30px;
+    font-family: poppin;
+    margin-top:100px;
+    margin-bottom: 30px;
+}
+/* Village Block*/
+.village-block {
+    /* border:1px solid red; */
+    padding:25px 10px;
+    margin-top:100px;
+    background-color:#0F0F0F;
+    
+}
+.big-text {
+    font-size:30px;
+}
+
+.village-block .get-direction > .rounded-link{
+    background-color: rgb(13, 71, 13);
+}
+.village-block .get-direction > .rounded-link::after{
+    background-color:white;
+    color:green;
+}
+.village-block .get-direction:hover > .rounded-link{
+    background-color:green;
+}
+.village-block .get-direction:hover > .rounded-link::after{
+    background-color:white;
+    color:red;
+}
+.village-block-container {
+    /* border:1px solid red; */
+    padding:10px 2px;
+    margin-top:50px;
+    justify-content: space-between;
+}
+
+.village-img-section
+{
+    width:45%;
+    border:1px solid gray;
+}
+.village-block .village-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.village-address {
+    width: 50%;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    gap:10px;
+    /* border:1px solid yellow; */
+}
+
+/* Coming Soon Box*/
+
+.coming-soon-block {
+    width: 100%;
+    /* border: 1px solid yellowgreen; */
+    margin-top:50px;
+    gap:20px;
+     /*v-gap for box top*/
+}
+.all-row-container {
+    width: 100%;
+    /* border:2px solid green; */
+    gap:20px ;  /*vertical gap for boxes*/
+
+}
+.box-row {
+    justify-content: space-evenly;
+    /* padding:20px 20px; */
+}
+.box {
+    /* border:1px solid red; */
+    width: 280px;
+    height: 250px;
+    background-color: white;
+    color:black;
+    border-radius: 4px;
+}
+/*box container styling*/
+
+.opening-soon {
+    color:red;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.salt-and-paper-box
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+.express , .city , .country {
+    font-size:18px;
+    margin-top:5px;
+    font-family:serif;
+}
+.hidden {
+    visibility: hidden;
+}
+.minus-icon {
+    display: none;
+}
+/* end footer section*/
+
+.end-footer
+{
+    margin-top:50px;
+}
+
+.end-section-01
+{
+    width: 35%;
+    /* border:1px solid yellowgreen; */
+    justify-content: flex-start;
+    
+}
+.end-section-01 .content{
+    /* border:1px solid red; */
+     justify-content: space-between;
+     text-align: left;
+     height:70%;
+}
+.end-section-01 img {
+    width: 200px;
+    height: 80px;
+}
+/* section of end-footer*/
+.end-section-02 {
+    /* border:1px solid yellowgreen; */
+    width: 20%;
+    text-align:center;
+}
+.list-header {
+  margin-right:25px;
+  font-size: 20px;
+  /* border:1px solid red; */
+  color:white;
+}
+
+.end-section-02 ul {
+    list-style-type: none;
+    margin:10px;
+    /* border:1px solid red; */
+}
+.end-section-02 li 
+{
+    display: flex;
+    padding:5px;
+    padding-left: 15px;
+    text-align: center;
+}
+.end-section-02 a
+{
+   text-decoration: none; 
+   font-size: 20px;
+}
+
+.plus-icon {
+    display: none;
+}
+
+.term-and-condition {
+    color:gray;
+}
+.end-footer a {
+    /* border:1px solid red; */
+    color:gray;
+    display: block;
+    width: 150px;
+}
+/* Contact Us*/
+.end-section-03 {
+    /* border:1px solid yellowgreen; */
+    width:25%;
+    text-align: justify;
+    gap:25px;
+}
+.number , .email , .head-address{
+    margin-top:15px;
+    color:gray;
+}
+/*Social */
+.end-section-04
+{
+    text-align: center;
+    /* border:1px solid yellowgreen; */
+    width: 25%;
+    gap:35px;
+}
+.social-logo
+ {
+    /* border:1px solid yellowgreen; */
+    padding:0px 20px;
+    width:200px;
+    margin:2px auto;
+    justify-content: space-between;
+
+ }
+.social-image {
+    width: 40px;
+}
+/*final footer*/
+
+.final-footer
+{
+    margin-top:40px;
+    justify-content: space-between;
+    font-size: 18px;
+}
